@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Task 3 — Table & Form</title>
+  <!-- External CSS file -->
+  <link rel="stylesheet" href="web2.3.css">
+</head>
+<body>
+
+  <!-- Page heading -->
+  <h1 id="grades-title">Student Grades</h1>
+
+  <!-- Student grades table -->
+  <table class="grades-table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Subject</th>
+        <th>Grade</th>
+      </tr>
+    </thead>
+    <tbody>
+
+      <!-- Example of rowspan (same student for 2 subjects) -->
+      <tr>
+        <td rowspan="2">Ali Turaliyev</td>
+        <td>Web Technologies</td>
+        <td>A</td>
+      </tr>
+      <tr>
+        <td>Operating Systems</td>
+        <td>A+</td>
+      </tr>
+
+      <!-- Highlighted row -->
+      <tr class="highlight-row">
+        <td>Maria</td>
+        <td>Discrete Math</td>
+        <td>A+</td>
+      </tr>
+
+      <!-- Example of colspan (merged cells for average) -->
+      <tr>
+        <td colspan="2">Average (class)</td>
+        <td>B+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Feedback form section -->
+  <h2 class="section-title">Feedback Form</h2>
+
+  <form class="form-card" action="#" method="post">
+    <!-- Name input -->
+    <div class="form-row">
+      <label for="name">Name</label>
+      <input id="name" name="name" type="text" placeholder="Enter your name" required>
+    </div>
+
+    <!-- Email input -->
+    <div class="form-row">
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" placeholder="you@example.com" required>
+    </div>
+
+    <!-- Dropdown select -->
+    <div class="form-row">
+      <label for="role">Role</label>
+      <select id="role" name="role" required>
+        <option value="">Select your role</option>
+        <option>Student</option>
+        <option>Teacher</option>
+        <option>Other</option>
+      </select>
+    </div>
+
+    <!-- Radio buttons -->
+    <div class="form-row">
+      <span class="label-like">You Good?</span>
+      <label class="inline"><input type="radio" name="helpful" value="Yes" required> Yes</label>
+      <label class="inline"><input type="radio" name="helpful" value="No"> No</label>
+    </div>
+
+    <!-- Textarea for comments -->
+    <div class="form-row">
+      <label for="comments">Comments</label>
+      <textarea id="comments" name="comments" rows="4" placeholder="Your message..."></textarea>
+    </div>
+
+    <!-- Submit button -->
+    <button class="btn-submit" type="submit">Submit</button>
+  </form>
+
+</body>
+</html>

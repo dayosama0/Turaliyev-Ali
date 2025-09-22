@@ -1,0 +1,113 @@
+/* Base styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Main content container */
+.content {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: white;
+    padding: 30px;
+}
+
+/* Image styling */
+img {
+    display: block;
+    max-width: 300px;
+    margin: 0 auto 20px auto;
+}
+
+/* Headings */
+h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 1.2rem;
+    color: #555;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Paragraph text */
+p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Lists */
+ol, ul {
+    margin: 20px 0;
+    padding-left: 30px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* Links section box */
+.links {
+    margin: 30px 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+/* Links inside .links */
+.links a {
+    display: inline-block;
+    margin-right: 20px;
+    color: #0066cc;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid #0066cc;
+}
+
+.links a:hover {
+    background-color: #0066cc;
+    color: white;
+}
+
+/* "Learn more" button container */
+.learn-more-btn {
+    text-align: center;
+    margin: 30px 0;
+}
+
+/* Button styling */
+.btn {
+    background-color: #0066cc;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #0052a3;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}

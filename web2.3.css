@@ -1,0 +1,117 @@
+/* Reset and base styles */
+* { box-sizing: border-box; }
+html, body { 
+  margin: 0; 
+  font-family: Arial, sans-serif; 
+  color:#222; 
+}
+
+/* Page heading */
+#grades-title {
+  text-align: center;
+  margin: 24px 0 12px;
+  color: #0b0b73;
+}
+
+/* ===== Table styling ===== */
+.grades-table {
+  width: 92%;
+  max-width: 900px;
+  margin: 0 auto 28px;         /* center + spacing below */
+  border-collapse: collapse;   /* merge table borders */
+  text-align: center;
+}
+
+/* Table header */
+.grades-table thead th {
+  background: #e8eef8;
+  color: #0b0b73;
+  font-weight: 700;
+}
+
+/* Table cells */
+.grades-table th,
+.grades-table td {
+  border: 1px solid #ccc;
+  padding: 10px 12px;
+}
+
+/* Zebra striping (even rows) */
+.grades-table tbody tr:nth-child(even) {
+  background: #fafafa;
+}
+
+/* Highlighted row */
+.highlight-row {
+  background: #fff5c2;
+}
+
+/* ===== Section title (before form) ===== */
+.section-title {
+  text-align: center;
+  margin: 8px 0 12px;
+  color: #0b0b73;
+}
+
+/* ===== Form styling ===== */
+.form-card {
+  width: 420px;
+  margin: 0 auto 40px;          /* centered form */
+  background: #f7faff;
+  padding: 18px;
+  border-radius: 12px;          /* rounded corners */
+  border: 1px solid #d9e3f2;
+}
+
+/* Spacing between fields */
+.form-row { margin-bottom: 12px; }
+
+/* Labels (bold) */
+label {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+/* Labels for radio groups */
+.label-like {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+/* Inputs, selects, textarea */
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;                  /* same width for all fields */
+  padding: 8px 10px;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  font: inherit;
+}
+
+/* Inline radio buttons */
+.inline {
+  display: inline-block;
+  margin-right: 12px;
+  font-weight: 400;
+}
+
+/* Submit button */
+.btn-submit {
+  width: 100%;
+  padding: 10px 12px;
+  background: #0b0b73;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* Submit button hover effect */
+.btn-submit:hover {
+  background: #09125a;
+}
